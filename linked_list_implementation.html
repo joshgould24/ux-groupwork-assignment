@@ -13,7 +13,7 @@
   <title>Implementing Singly Linked Lists - Data Structures</title>
 </head>
 
-<body class="bg-primary">
+<body class="bg-light vh-100 d-flex flex-column">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
     <div class="container-fluid">
@@ -72,7 +72,7 @@
   </nav>
 
   <!-- Toast element -->
-  <div class="toast align-items-center bg-dark text-white fs-4 position-absolute p-3 top-5 end-0" role="alert"
+  <div class="toast align-items-center bg-info text-dark fs-4 position-absolute p-3 top-5 end-0" role="alert"
     id="UnavailablePage" style="z-index: 2000;">
     <div class="d-flex">
       <div class="toast-body">
@@ -82,11 +82,47 @@
     </div>
   </div>
 
-  //TODO: video/text switch
+  <!-- Page content -->
+  <div class="container p-lg-5 m-0 mw-100 h-auto d-flex flex-fill flex-column justify-content-evenly">
+    <!-- Title -->
+    <h1 class="h1 pt-3">Implementing Singly Linked Lists</h1>
 
-  //TODO: pseudocode/code switch
-
-  //TODO: content summary
+    <!-- Video/Text switch -->
+    <div class="flex-grow-1">
+      <nav class="pt-3 flex-grow-1">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="true">Video version</button>
+          <button class="nav-link" id="nav-text-tab" data-bs-toggle="tab" data-bs-target="#nav-text" type="button" role="tab" aria-controls="nav-text" aria-selected="false">Text/Image version</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">//TODO: insert video placeholder image</div>
+        <div class="tab-pane fade" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">//TODO: insert content</div>
+      </div>
+    </div>
+      
+    <!-- Programming language switch -->
+    <div class="flex-grow-1">
+      <nav class="pt-5">
+        <div class="nav nav-tabs" id="code-tab" role="tablist">
+          <button class="nav-link active" id="code-pseudocode-tab" data-bs-toggle="tab" data-bs-target="#code-pseudocode" type="button" role="tab" aria-controls="code-pseudocode" aria-selected="true">Pseudocode</button>
+          <button class="nav-link" id="code-Cpp-tab" data-bs-toggle="tab" data-bs-target="#code-Cpp" type="button" role="tab" aria-controls="code-Cpp" aria-selected="false">C++</button>
+          <button class="nav-link" id="codeCSharp-tab" data-bs-toggle="tab" data-bs-target="#codeCSharp" type="button" role="tab" aria-controls="codeCSharp" aria-selected="false">C#</button>
+          <button class="nav-link" id="code-Java-tab" data-bs-toggle="tab" data-bs-target="#code-Java" type="button" role="tab" aria-controls="code-Java" aria-selected="false">Java</button>
+          <button class="nav-link" id="code-PHP-tab" data-bs-toggle="tab" data-bs-target="#code-PHP" type="button" role="tab" aria-controls="code-PHP" aria-selected="false">PHP</button>
+          <button class="nav-link" id="code-Python-tab" data-bs-toggle="tab" data-bs-target="#code-Python" type="button" role="tab" aria-controls="code-Python" aria-selected="false">Python</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="code-tabContent">
+        <div class="tab-pane fade show active" id="code-pseudocode" role="tabpanel" aria-labelledby="code-pseudocode-tab">//TODO: pseudocode</div>
+        <div class="tab-pane fade" id="code-Cpp" role="tabpanel" aria-labelledby="code-Cpp-tab">//TODO: C++</div>
+        <div class="tab-pane fade" id="codeCSharp" role="tabpanel" aria-labelledby="codeCSharp-tab">//TODO: C#</div>
+        <div class="tab-pane fade" id="code-Java" role="tabpanel" aria-labelledby="code-Java-tab">//TODO: Java</div>
+        <div class="tab-pane fade" id="code-PHP" role="tabpanel" aria-labelledby="code-PHP-tab">//TODO: PHP</div>
+        <div class="tab-pane fade" id="code-Python" role="tabpanel" aria-labelledby="code-Python-tab">//TODO: Python</div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
