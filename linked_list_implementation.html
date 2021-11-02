@@ -96,8 +96,80 @@
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">//TODO: insert video placeholder image</div>
-        <div class="tab-pane fade" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">//TODO: insert content</div>
+        <div class="tab-pane fade show active" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab"><img src="images/video_placeholder.png" alt="placeholder for video"></div>
+        <div class="tab-pane fade" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">
+          <!-- Page text content  -->
+          <h2>Linked List Basics</h2>
+          <p>A linked-list is a sequence of data structures which are connected together via links.</p>
+          <p>Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list the second most used data structure after array. Following are important terms to understand the concepts of Linked List.</p>
+          <ul>
+            <li><b>Link</b> − Each Link of a linked list can store a data called an element.</li>
+            <li><b>Next</b> − Each Link of a linked list contain a link to next link called Next.</li>
+            <li><b>LinkedList</b> − A LinkedList contains the connection link to the first Link called First.</li>
+          </ul>
+          <h2>Linked List Representation</h2>
+          <img src="images/linked_list_image_placeholder.png" alt="placeholder image">
+          <p>As per above shown illustration, following are the important points to be considered.</p>
+          <ul class="list">
+          <li>LinkedList contains an link element called first.</li>
+          <li>Each Link carries a data field(s) and a Link Field called next.</li>
+          <li>Each Link is linked with its next link using its next link.</li>
+          <li>Last Link carries a Link as null to mark the end of the list.</li>
+          </ul>
+          <h2>Types of Linked List</h2>
+          <p>Following are the various flavours of linked list.</p>
+          <ul class="list">
+          <li><p><b>Simple Linked List</b> &minus; Item Navigation is forward only.</p></li>
+          <li><p><b>Doubly Linked List</b> &minus; Items can be navigated forward and backward way.</p></li>
+          <li><p><b>Circular Linked List</b> &minus; Last item contains link of the first element as next and and first element has link to last element as prev.</p></li>
+          </ul>
+          <h2>Basic Operations</h2>
+          <p>Following are the basic operations supported by a list.</p>
+          <ul class="list">
+          <li><p><b>Insertion</b> &minus; add an element at the beginning of the list.</p></li>
+          <li><p><b>Deletion</b> &minus; delete an element at the beginning of the list.</p></li>
+          <li><p><b>Display</b> &minus; displaying complete list.</p></li>
+          <li><p><b>Search</b> &minus; search an element using given key.</p></li>
+          <li><p><b>Delete</b> &minus; delete an element using given key.</p></li>
+          </ul>
+          <h2>Insertion Operation</h2>
+          <p>Insertion is a three step process &minus;</p>
+          <ul class="list">
+          <li>Create a new Link with provided data.</li>
+          <li>Point New Link to old First Link.</li>
+          <li>Point First Link to this New Link.</li>
+          </ul>
+          <img src="images/linked_list_image_placeholder.png" alt="Linked List placeholder image" />
+          
+          <h2>Deletion Operation</h2>
+          <p>Deletion is a two step process &minus;</p>
+          <ul class="list">
+          <li>Get the Link pointed by First Link as Temp Link.</li>
+          <li>Point First Link to Temp Link's  Next Link.</li>
+          </ul>
+          <img src="images/linked_list_image_placeholder.png" alt="Linked List placeholder image" />
+          
+          <h2>Navigation Operation</h2>
+          <p>Navigation is a recursive step process and is basis of many operations like search, delete etc. &minus;</p>
+          <ul class="list">
+          <li>Get the Link pointed by First Link as Current Link.</li>
+          <li>Check if Current Link is not null and display it.</li>
+          <li>Point Current Link to Next Link of Current Link and move to above step.</li>
+          </ul>
+          <img src="images/linked_list_image_placeholder.png" alt="Linked List placeholder image" />
+          
+          <p><b>Note &minus;</b></p>
+          
+          <h2>Advanced Operations</h2>
+          <p>Following are the advanced operations specified for a list.</p>
+          <ul class="list">
+          <li><p><b>Sort</b> &minus; sorting a list based on a particular order.</p></li>
+          <li><p><b>Reverse</b> &minus; reversing a linked list.</p></li>
+          </ul>
+          <h2>Sort Operation</h2>
+          <p>We've used bubble sort to sort a list.</p>
+          
+        </div>
       </div>
     </div>
       
