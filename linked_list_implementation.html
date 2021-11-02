@@ -91,121 +91,207 @@
     <div class="flex-grow-1">
       <nav class="pt-3 flex-grow-1">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="true">Video version</button>
-          <button class="nav-link" id="nav-text-tab" data-bs-toggle="tab" data-bs-target="#nav-text" type="button" role="tab" aria-controls="nav-text" aria-selected="false">Text/Image version</button>
+          <button class="nav-link active" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video"
+            type="button" role="tab" aria-controls="nav-video" aria-selected="true">Video version</button>
+          <button class="nav-link" id="nav-text-tab" data-bs-toggle="tab" data-bs-target="#nav-text" type="button"
+            role="tab" aria-controls="nav-text" aria-selected="false">Text/Image version</button>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab"><img style="max-width: 100%;" src="images/video_placeholder.png" alt="placeholder for video"></div>
+        <div class="tab-pane fade show active" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab"><img
+            style="max-width: 100%;" src="images/video_placeholder.png" alt="placeholder for video"></div>
         <div class="tab-pane fade" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">
           <!-- Page text content  -->
           <h2>Linked List Basics</h2>
           <p>A linked-list is a sequence of data structures which are connected together via links.</p>
-          <p>Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list the second most used data structure after array. Following are important terms to understand the concepts of Linked List.</p>
+          <p>Linked List is a sequence of links which contains items. Each link contains a connection to another link.
+            Linked list the second most used data structure after array. Following are important terms to understand the
+            concepts of Linked List.</p>
           <ul>
             <li><b>Link</b> − Each Link of a linked list can store a data called an element.</li>
             <li><b>Next</b> − Each Link of a linked list contain a link to next link called Next.</li>
             <li><b>LinkedList</b> − A LinkedList contains the connection link to the first Link called First.</li>
           </ul>
           <h2>Linked List Representation</h2>
-          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png" alt="placeholder image">
+          z
           <p>As per above shown illustration, following are the important points to be considered.</p>
           <ul class="list">
-          <li>LinkedList contains an link element called first.</li>
-          <li>Each Link carries a data field(s) and a Link Field called next.</li>
-          <li>Each Link is linked with its next link using its next link.</li>
-          <li>Last Link carries a Link as null to mark the end of the list.</li>
+            <li>LinkedList contains an link element called first.</li>
+            <li>Each Link carries a data field(s) and a Link Field called next.</li>
+            <li>Each Link is linked with its next link using its next link.</li>
+            <li>Last Link carries a Link as null to mark the end of the list.</li>
           </ul>
           <h2>Types of Linked List</h2>
           <p>Following are the various flavours of linked list.</p>
           <ul class="list">
-          <li><p><b>Simple Linked List</b> &minus; Item Navigation is forward only.</p></li>
-          <li><p><b>Doubly Linked List</b> &minus; Items can be navigated forward and backward way.</p></li>
-          <li><p><b>Circular Linked List</b> &minus; Last item contains link of the first element as next and and first element has link to last element as prev.</p></li>
+            <li>
+              <p><b>Simple Linked List</b> &minus; Item Navigation is forward only.</p>
+            </li>
+            <li>
+              <p><b>Doubly Linked List</b> &minus; Items can be navigated forward and backward way.</p>
+            </li>
+            <li>
+              <p><b>Circular Linked List</b> &minus; Last item contains link of the first element as next and and first
+                element has link to last element as prev.</p>
+            </li>
           </ul>
           <h2>Basic Operations</h2>
           <p>Following are the basic operations supported by a list.</p>
           <ul class="list">
-          <li><p><b>Insertion</b> &minus; add an element at the beginning of the list.</p></li>
-          <li><p><b>Deletion</b> &minus; delete an element at the beginning of the list.</p></li>
-          <li><p><b>Display</b> &minus; displaying complete list.</p></li>
-          <li><p><b>Search</b> &minus; search an element using given key.</p></li>
-          <li><p><b>Delete</b> &minus; delete an element using given key.</p></li>
+            <li>
+              <p><b>Insertion</b> &minus; add an element at the beginning of the list.</p>
+            </li>
+            <li>
+              <p><b>Deletion</b> &minus; delete an element at the beginning of the list.</p>
+            </li>
+            <li>
+              <p><b>Display</b> &minus; displaying complete list.</p>
+            </li>
+            <li>
+              <p><b>Search</b> &minus; search an element using given key.</p>
+            </li>
+            <li>
+              <p><b>Delete</b> &minus; delete an element using given key.</p>
+            </li>
           </ul>
           <h2>Insertion Operation</h2>
           <p>Insertion is a three step process &minus;</p>
           <ul class="list">
-          <li>Create a new Link with provided data.</li>
-          <li>Point New Link to old First Link.</li>
-          <li>Point First Link to this New Link.</li>
+            <li>Create a new Link with provided data.</li>
+            <li>Point New Link to old First Link.</li>
+            <li>Point First Link to this New Link.</li>
           </ul>
-          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png" alt="Linked List placeholder image" />
-          
+          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png"
+            alt="Linked List placeholder image" />
+
           <h2>Deletion Operation</h2>
           <p>Deletion is a two step process &minus;</p>
           <ul class="list">
-          <li>Get the Link pointed by First Link as Temp Link.</li>
-          <li>Point First Link to Temp Link's  Next Link.</li>
+            <li>Get the Link pointed by First Link as Temp Link.</li>
+            <li>Point First Link to Temp Link's Next Link.</li>
           </ul>
-          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png" alt="Linked List placeholder image" />
-          
+          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png"
+            alt="Linked List placeholder image" />
+
           <h2>Navigation Operation</h2>
           <p>Navigation is a recursive step process and is basis of many operations like search, delete etc. &minus;</p>
           <ul class="list">
-          <li>Get the Link pointed by First Link as Current Link.</li>
-          <li>Check if Current Link is not null and display it.</li>
-          <li>Point Current Link to Next Link of Current Link and move to above step.</li>
+            <li>Get the Link pointed by First Link as Current Link.</li>
+            <li>Check if Current Link is not null and display it.</li>
+            <li>Point Current Link to Next Link of Current Link and move to above step.</li>
           </ul>
-          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png" alt="Linked List placeholder image" />
-          
+          <img style="max-width: 100%;" src="images/linked_list_image_placeholder.png"
+            alt="Linked List placeholder image" />
+
           <p><b>Note &minus;</b></p>
-          
+
           <h2>Advanced Operations</h2>
           <p>Following are the advanced operations specified for a list.</p>
           <ul class="list">
-          <li><p><b>Sort</b> &minus; sorting a list based on a particular order.</p></li>
-          <li><p><b>Reverse</b> &minus; reversing a linked list.</p></li>
+            <li>
+              <p><b>Sort</b> &minus; sorting a list based on a particular order.</p>
+            </li>
+            <li>
+              <p><b>Reverse</b> &minus; reversing a linked list.</p>
+            </li>
           </ul>
           <h2>Sort Operation</h2>
           <p>We've used bubble sort to sort a list.</p>
-          
+
         </div>
       </div>
     </div>
-      
+
     <!-- Programming language switch -->
     <div class="flex-grow-1">
       <nav class="pt-5">
         <div class="nav nav-tabs" id="code-tab" role="tablist">
-          <button class="nav-link active" id="code-pseudocode-tab" data-bs-toggle="tab" data-bs-target="#code-pseudocode" type="button" role="tab" aria-controls="code-pseudocode" aria-selected="true">Pseudocode</button>
-          <button class="nav-link" id="code-Cpp-tab" data-bs-toggle="tab" data-bs-target="#code-Cpp" type="button" role="tab" aria-controls="code-Cpp" aria-selected="false">C++</button>
-          <button class="nav-link" id="codeCSharp-tab" data-bs-toggle="tab" data-bs-target="#codeCSharp" type="button" role="tab" aria-controls="codeCSharp" aria-selected="false">C#</button>
-          <button class="nav-link" id="code-Java-tab" data-bs-toggle="tab" data-bs-target="#code-Java" type="button" role="tab" aria-controls="code-Java" aria-selected="false">Java</button>
-          <button class="nav-link" id="code-PHP-tab" data-bs-toggle="tab" data-bs-target="#code-PHP" type="button" role="tab" aria-controls="code-PHP" aria-selected="false">PHP</button>
-          <button class="nav-link" id="code-Python-tab" data-bs-toggle="tab" data-bs-target="#code-Python" type="button" role="tab" aria-controls="code-Python" aria-selected="false">Python</button>
+          <button class="nav-link active" id="code-pseudocode-tab" data-bs-toggle="tab"
+            data-bs-target="#code-pseudocode" type="button" role="tab" aria-controls="code-pseudocode"
+            aria-selected="true">Pseudocode</button>
+          <button class="nav-link" id="code-Cpp-tab" data-bs-toggle="tab" data-bs-target="#code-Cpp" type="button"
+            role="tab" aria-controls="code-Cpp" aria-selected="false">C++</button>
+          <button class="nav-link" id="codeCSharp-tab" data-bs-toggle="tab" data-bs-target="#codeCSharp" type="button"
+            role="tab" aria-controls="codeCSharp" aria-selected="false">C#</button>
+          <button class="nav-link" id="code-Java-tab" data-bs-toggle="tab" data-bs-target="#code-Java" type="button"
+            role="tab" aria-controls="code-Java" aria-selected="false">Java</button>
+          <button class="nav-link" id="code-PHP-tab" data-bs-toggle="tab" data-bs-target="#code-PHP" type="button"
+            role="tab" aria-controls="code-PHP" aria-selected="false">PHP</button>
+          <button class="nav-link" id="code-Python-tab" data-bs-toggle="tab" data-bs-target="#code-Python" type="button"
+            role="tab" aria-controls="code-Python" aria-selected="false">Python</button>
         </div>
       </nav>
       <div class="tab-content" id="code-tabContent">
-        <div class="tab-pane fade show active" id="code-pseudocode" role="tabpanel" aria-labelledby="code-pseudocode-tab">//TODO: pseudocode</div>
-        <div class="tab-pane fade" id="code-Cpp" role="tabpanel" aria-labelledby="code-Cpp-tab">//TODO: C++</div>
-        <div class="tab-pane fade" id="codeCSharp" role="tabpanel" aria-labelledby="codeCSharp-tab">//TODO: C#</div>
-        <div class="tab-pane fade" id="code-Java" role="tabpanel" aria-labelledby="code-Java-tab">
-          <p>// Import the LinkedList class</p>
-          <p>import java.util.LinkedList;</p>
+        <div class="tab-pane fade show active" id="code-pseudocode" role="tabpanel"
+          aria-labelledby="code-pseudocode-tab">
+          <p>import linked list class</p>
           <p></p>
-          <p>public class Main {</p>
-          <p>&ensp;public static void main(String[] args) {</p>
-          <p>&ensp;LinkedList<String> cars = new LinkedList<String>();</p>
+          <p>create a new linked list</p>
+          <p>add 4 items</p>
+          <p>print the list to the screen</p>
+        </div>
+        <div class="tab-pane fade" id="code-Cpp" role="tabpanel" aria-labelledby="code-Cpp-tab">
+          <p>#include &lt;LinkedList&gt;</p>
+          <p>int main() {</p>
+          <p>&ensp;LinkedList cars;</p>
           <p>&ensp;cars.add("Volvo");</p>
-          <p>&ensp;&ensp;cars.add("BMW");</p>
-          <p>&ensp;&ensp;cars.add("Ford");</p>
-          <p>&ensp;&ensp;cars.add("Mazda");</p>
-          <p>&ensp;&ensp;System.out.println(cars);</p>
+          <p>&ensp;cars.add("BMW");</p>
+          <p>&ensp;cars.add("Ford");</p>
+          <p>&ensp;cars.add("Mazda");</p>
+          <p>&ensp;cars.printList();</p>
+          <p>&ensp;return 0;
+          <p>&ensp;}</p>
+        </div>
+        <div class="tab-pane fade" id="codeCSharp" role="tabpanel" aria-labelledby="codeCSharp-tab">
+          <p>using System;</p>
+          <p>using System.Collections.Generic</p>
+          <p>class Main {</p>
+          <p>&ensp;static void Main(String[] args) {</p>
+          <p>&ensp;LinkedList&lt;string&gt; cars = new LinkedList&lt;string&gt;();</p>
+          <p>&ensp;cars.addLast("Volvo");</p>
+          <p>&ensp;cars.addLast("BMW");</p>
+          <p>&ensp;cars.addLast("Ford");</p>
+          <p>&ensp;cars.addLast("Mazda");</p>
+          <p>&ensp;Console.WriteLine(cars);</p>
           <p>&ensp;}</p>
           <p>}</p>
-          </div>
-        <div class="tab-pane fade" id="code-PHP" role="tabpanel" aria-labelledby="code-PHP-tab">//TODO: PHP</div>
-        <div class="tab-pane fade" id="code-Python" role="tabpanel" aria-labelledby="code-Python-tab">//TODO: Python</div>
+        </div>
+        <div class="tab-pane fade" id="code-Java" role="tabpanel" aria-labelledby="code-Java-tab">
+          <p>import java.util.LinkedList;</p>
+          <p>public class Main {</p>
+          <p>&ensp;public static void main(String[] args) {</p>
+          <p>&ensp;LinkedList&lt;String&gt; cars = new LinkedList&lt;String&gt;();</p>
+          <p>&ensp;cars.add("Volvo");</p>
+          <p>&ensp;cars.add("BMW");</p>
+          <p>&ensp;cars.add("Ford");</p>
+          <p>&ensp;cars.add("Mazda");</p>
+          <p>&ensp;System.out.println(cars);</p>
+          <p>&ensp;}</p>
+          <p>}</p>
+        </div>
+        <div class="tab-pane fade" id="code-PHP" role="tabpanel" aria-labelledby="code-PHP-tab">
+          <p>&lt;?php</p>
+          <p></p>
+          <p>&ensp;include "LinkedList.php";</p>
+          <p>&ensp;$cars = new LinkedList();</p>
+          <p>&ensp;$cars->add("Volvo");</p>
+          <p>&ensp;$cars->add("BMW");</p>
+          <p>&ensp;$cars->add("Ford");</p>
+          <p>&ensp;$cars->add("Mazda");</p>
+          <p>&ensp;echo $cars;</p>
+          <p>&gt;</p>
+        </div>
+        <div class="tab-pane fade" id="code-Python" role="tabpanel" aria-labelledby="code-Python-tab">
+          <p>import LinkedList</p>
+          <p></p>
+          <p>def main():</p>
+          <p>&ensp;cars = LinkedList()</p>
+          <p>&ensp;cars.add("Volvo")</p>
+          <p>&ensp;cars.add("BMW")</p>
+          <p>&ensp;cars.add("Ford")</p>
+          <p>&ensp;cars.add("Mazda")</p>
+          <p>&ensp;print(cars)</p>
+        </div>
       </div>
     </div>
   </div>
