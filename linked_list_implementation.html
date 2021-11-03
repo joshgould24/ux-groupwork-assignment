@@ -64,6 +64,14 @@
               onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();">Graph</a>
           </li>
           <li class="nav-item">
+              <form class="d-flex" name="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search"/>
+                  <!-- For a working search bar, the button type would be "submit". Without the search implementation, the "button" type is more responsive. -->
+                  <button class="btn btn-success" type="button"
+                      onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('searchToast')).show();">Search</button>
+              </form>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="settings.html" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();"><i class="bi-gear"></i> Settings</a>
           </li>
         </ul>
@@ -71,7 +79,7 @@
     </div>
   </nav>
 
-  <!-- Toast element -->
+  <!-- Toast elements -->
   <div class="toast align-items-center bg-info text-dark fs-4 position-absolute p-3 top-5 end-0" role="alert"
     id="UnavailablePage" style="z-index: 2000;">
     <div class="d-flex">
@@ -80,6 +88,15 @@
       </div>
       <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
     </div>
+  </div>
+  <div class="toast align-items-center bg-info text-dark fs-4 position-absolute p-3 top-5 end-0" role="alert"
+      id="searchToast" style="z-index: 2000;">
+      <div class="d-flex">
+          <div class="toast-body" id="searchToastText">
+              Sorry, search is not available.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
   </div>
 
   <!-- Page content -->
