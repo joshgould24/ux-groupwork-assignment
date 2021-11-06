@@ -18,7 +18,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();">Data Structures</a>
+      <a class="navbar-brand" href="index.html" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();">Data
+        Structures</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,7 +30,8 @@
               onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();">Array</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="linked_list.html" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();">Linked List</a>
+            <a class="nav-link" href="linked_list.html"
+              onclick="var snd = new Audio('sounds/click.mp3'); snd.play();">Linked List</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"
@@ -45,7 +47,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"
-              onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();">Hash Table</a>
+              onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();">Hash
+              Table</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"
@@ -64,15 +67,16 @@
               onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();">Graph</a>
           </li>
           <li class="nav-item">
-              <form class="d-flex" name="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search"/>
-                  <!-- For a working search bar, the button type would be "submit". Without the search implementation, the "button" type is more responsive. -->
-                  <button class="btn btn-success" type="button"
-                      onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('searchToast')).show();">Search</button>
-              </form>
+            <form class="d-flex" name="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search" />
+              <!-- For a working search bar, the button type would be "submit". Without the search implementation, the "button" type is more responsive. -->
+              <button class="btn btn-success" type="button"
+                onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('searchToast')).show();">Search</button>
+            </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="settings.html" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();"><i class="bi-gear"></i> Settings</a>
+            <a class="nav-link" href="settings.html" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();"><i
+                class="bi-gear"></i> Settings</a>
           </li>
         </ul>
       </div>
@@ -90,61 +94,80 @@
     </div>
   </div>
   <div class="toast align-items-center bg-info text-dark fs-4 position-absolute p-3 top-5 end-0" role="alert"
-      id="searchToast" style="z-index: 2000;">
-      <div class="d-flex">
-          <div class="toast-body" id="searchToastText">
-              Sorry, search is not available.
-          </div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    id="searchToast" style="z-index: 2000;">
+    <div class="d-flex">
+      <div class="toast-body" id="searchToastText">
+        Sorry, search is not available.
       </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
   </div>
 
   <!-- Title -->
   <h1 class="h1 pt-5 text-center">The Linked List</h1>
 
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="main-breadcrumb ms-sm-5">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Linked List</li>
+    </ol>
+  </nav>
+
   <!-- Selection Grid -->
-  <div class="container p-1 m-0 mw-100 mh-90 h-auto d-flex flex-fill flex-column align-items-stretch justify-content-evenly">
+  <div
+    class="container p-1 m-0 mw-100 mh-90 h-auto d-flex flex-fill flex-column align-items-stretch justify-content-evenly">
     <div class="row mw-100 d-flex flex-row align-items-stretch justify-content-evenly">
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">What is a Linked List?</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
-        style="text-decoration: none">
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+          style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Singly Linked Lists</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="linked_list_implementation.html" style="text-decoration: none" onclick="var snd = new Audio('sounds/click.mp3'); snd.play();">
+        <a class="h-100 w-100 d-inline-block" href="linked_list_implementation.html" style="text-decoration: none"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play();">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Implementing Singly Linked Lists</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Doubly Linked Lists</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Implementing Doubly Linked Lists</span>
           </div>
         </a>
@@ -152,46 +175,56 @@
     </div>
     <div class="row mw-100 d-flex flex-row align-items-stretch justify-content-evenly">
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Circularly Linked Lists</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Implementing Circularly Linked Lists</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Linked Lists in Practice</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Project</span>
           </div>
         </a>
       </div>
       <div class="col m-5 p-0 text-primary">
-        <a class="h-100 w-100 d-inline-block" href="#" onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
+        <a class="h-100 w-100 d-inline-block" href="#"
+          onclick="var snd = new Audio('sounds/click.mp3'); snd.play(); new bootstrap.Toast(document.getElementById('UnavailablePage')).show();"
           style="text-decoration: none">
           <div class="card bg-dark h-100">
-            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top" alt="This image has not been added yet.">
+            <img src="images/linked_list_tutorial_placeholder.png" class="card-img-top"
+              alt="This image has not been added yet.">
             <span class="card-footer d-inline-block h-100 align-middle">Linked List Test</span>
           </div>
         </a>
